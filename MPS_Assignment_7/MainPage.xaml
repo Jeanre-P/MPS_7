@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MPS_Assignment_7.MainPage"
+
+    <StackLayout>
+        <Frame BackgroundColor="Gray" Padding="15" CornerRadius="0">
+            <Label Text="SAMSUNG Music" HorizontalTextAlignment="Start" TextColor="White" FontSize="Title"/>
+        </Frame>
+    </StackLayout>
+
+    <ListView Margin="10, 0">
+        <ListView.ItemSource>
+            <x:Array Type="{x:Type local:Track}">
+                <local:Track Title="Mockingbird" Artist = "Eminem" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+                <local:Track Title ="The Real Slim Shady" Artist = "Eminem" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+                <local:Track Title ="Godzilla" Artist = "Eminem" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+                <local:Track Title ="Loose Yourself" Artist = "Eminem" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+                <local:Track Title ="Hotline Bling" Artist = "Drake" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+                <local:Track Title ="Popstar" Artist = "Drake" ImageUrl = "iconfinder_Musical_note_2638326.png" />
+            </x:Array>
+        </ListView.ItemSource>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="0, 5"
+                                     Orientation="Horizontal" >
+                        <BoxView 
+                            Image="{Binding ImageUrl} />
+                        </BoxView>
+                            <StackLayout VerticalOptions="Center"
+                                        Spacing="0" >
+                                <Label Text="{Binding Title}" />
+                                <Label Text="{Binding Artist}" />
+                            </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage> 
