@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "universal",
+      "filename": "MPS7_Samsung_Music_DotSettings.png"
+    }
+  ],
+  "properties": {},
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}
